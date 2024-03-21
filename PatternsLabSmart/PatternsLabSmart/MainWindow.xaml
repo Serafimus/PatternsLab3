@@ -1,0 +1,16 @@
+﻿<Window x:Class="PatternsLabSmart.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PatternsLabSmart"
+        mc:Ignorable="d"
+        Title="Симулятор смартфона" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="ButtonTurn" Content="Кнопка питания" HorizontalAlignment="Left" Margin="548,110,0,0" VerticalAlignment="Top" PreviewMouseDown="ButtonTurn_PreviewMouseDown" PreviewMouseUp="ButtonTurn_PreviewMouseUp"  />
+        <Button x:Name="ButtonVolumeUp" Content="Громкость +" HorizontalAlignment="Left" Margin="175,156,0,0" VerticalAlignment="Top" Click="ButtonVolumeUp_Click"/>
+        <Button x:Name="ButtonVolumeDown" Content="Громкость -" HorizontalAlignment="Left" Margin="175,181,0,0" VerticalAlignment="Top" Width="73" Click="ButtonVolumeDown_Click"/>
+        <Label x:Name="LabelStateNow" Content="Label" HorizontalAlignment="Left" Margin="71,222,0,0" VerticalAlignment="Top" Height="139" Width="221" FontSize="30"/>
+        <Image HorizontalAlignment="Left" Height="443" Margin="253,0,0,0" VerticalAlignment="Top" Width="354" Source="Images/Smartphone.png"/>
+    </Grid>
+</Window>
